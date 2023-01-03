@@ -1,0 +1,38 @@
+.img {
+    max-width: 30%;    
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.cat {
+    font-weight: bolder;
+    font-size: larger;
+    margin-right: 10px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px
+}
+
+body {
+    padding: 30px;
+    border: solid grey 3px;
+    border-radius: 3px;
+    max-width: 80%;
+    margin: auto;    
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px; 
+    margin-top: 30px;
+    font-size: large;
+}

@@ -1,0 +1,21 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@using UmbracoProject.CatFact;
+
+@{
+    var data = await CatFactClient.GetCatFactAsync();
+}
+
+<div>
+    @if (data == null)
+    {
+        <div class="cat">
+            No cat fact :(
+        </div>
+    }
+    else
+    {
+        <div>
+            @data.fact
+        </div>
+    }
+</div>

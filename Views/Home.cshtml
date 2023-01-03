@@ -1,0 +1,22 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Home>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    Layout = "Master.cshtml";
+}
+
+<div>
+    <h1>
+        @Model.Value("headerText")
+    </h1>
+
+    <div>
+        <div class="cat">
+            @await Html.PartialAsync("Cat Fact")
+        </div>
+        <div class="container">
+            <img class="img" src="~/images/catbasket.jpg" alt="catbasket">
+            @Model.Value("paragraph")
+        </div>
+    </div>
+</div>
